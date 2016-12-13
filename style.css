@@ -1,0 +1,79 @@
+h1 {
+font-size: 70px;
+word-wrap: break-word;
+}
+
+@font-face {
+font-family: pamega-demo;
+src: url("font/pamega-demo.ttf");
+}
+.hasil h1:nth-child(1) {
+font-family: pamega-demo;
+}
+
+@font-face {
+font-family: vintage-avalanche;
+src: url("font/vintage-avalanche.otf");
+}
+.hasil h1:nth-child(2) {
+font-family: vintage-avalanche;
+}
+
+@font-face {
+font-family: tasty-birds;
+src: url("font/tasty-birds.otf");
+}
+.hasil h1:nth-child(3) {
+font-family: tasty-birds;
+}
+
+@font-face {
+font-family: legion-of-darwin;
+src: url("font/legion-of-darwin.ttf");
+}
+.hasil h1:nth-child(4) {
+font-family: legion-of-darwin;
+}
+
+@font-face {
+font-family: candle;
+src: url("font/candlescript-demo-version.otf");
+}
+.hasil h1:nth-child(5) {
+font-family: candle;
+}
+
+@font-face {
+font-family: naga;
+src: url("font/dragon-is-coming.otf");
+}
+.hasil h1:nth-child(6) {
+font-family: naga;
+font-size: 150px;
+}
+
+@font-face {
+font-family: espana;
+src: url("font/mademoiselle-camille.ttf");
+}
+.hasil h1:nth-child(7) {
+font-family: espana;
+font-size: 150px;
+}
+
+@font-face {
+font-family: maratre;
+src: url("font/maratre.otf");
+}
+.hasil h1:nth-child(8) {
+font-family: maratre;
+font-size: 100px;
+}
+
+@font-face {
+font-family: hati;
+src: url("font/the-heart-of-everything-demo.ttf");
+}
+.hasil h1:nth-child(9) {
+font-family: hati;
+}
