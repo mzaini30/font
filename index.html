@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html ng-app>
+
 <head>
-	<title>Font</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css"/>
-<link rel="stylesheet" href="style.css">
-<script src="angular.min.js"></script>
+    <title>Font</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script type="text/javascript" src="data-font.js"></script>
+    <script type="text/javascript">
+    document.writeln("<style>")
+    for (var i = 0; i < font.length; i++) {
+        document.writeln("@font-face {")
+        document.writeln("font-family: " + font[i] + ";")
+        document.writeln("src: url('font/" + font[i] + ");")
+        document.writeln("}")
+    }
+    document.writeln("</style>")
+    </script>
+    <script src="angular.min.js"></script>
 </head>
+
 <body class="w3-container">
-<br>
-	<input type="teks" ng-model="teks" placeholder="Write here" autofocus/>
-<br>
-<br>
-<div class="hasil">
-
-<h1>{{teks}}</h1>
-<h1>{{teks}}</h1>
-<h1>{{teks}}</h1>
-<h1>{{teks}}</h1>
-<h1>{{teks}}</h1>
-
-<h1>{{teks}}</h1>
-<h1>{{teks}}</h1>
-<h1>{{teks}}</h1>
-<h1>{{teks}}</h1>
-
-</div>
+    <br>
+    <input type="teks" ng-model="teks" placeholder="Write here" autofocus/>
+    <br>
+    <br>
+    <div class="hasil">
+        <script type="text/javascript">
+        for (var i = 0; i < font.length; i++) {
+            document.writeln("<h1 style='font-family: " + font[i] + "'>{{teks}}</h1>")
+        }
+        </script>
+    </div>
 </body>
+
 </html>
