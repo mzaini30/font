@@ -2,7 +2,7 @@ h1 {
 font-size: 70px;
 word-wrap: break-word;
 }
-
+/*
 @font-face {
 font-family: pamega-demo;
 src: url("font/pamega-demo.ttf");
@@ -76,4 +76,4 @@ src: url("font/the-heart-of-everything-demo.ttf");
 }
 .hasil h1:nth-child(9) {
 font-family: hati;
-}
+}*/

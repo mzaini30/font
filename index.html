@@ -6,14 +6,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="w3.css" />
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <script type="text/javascript" src="data-font.js"></script>
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript">
+    var nama_font = []
     document.writeln("<style>")
     for (var i = 0; i < font.length; i++) {
+        nama_font[i] = font[i].slice(0, -4)
         document.writeln("@font-face {")
-        document.writeln("font-family: " + font[i] + ";")
-        document.writeln("src: url('font/" + font[i] + ");")
+        document.writeln("font-family: " + nama_font[i] + ";")
+        document.writeln("src: url('font/" + font[i] + "');")
         document.writeln("}")
     }
     document.writeln("</style>")
@@ -28,8 +30,10 @@
     <br>
     <div class="hasil">
         <script type="text/javascript">
+        var nama_font = []
         for (var i = 0; i < font.length; i++) {
-            document.writeln("<h1 style='font-family: " + font[i] + "'>{{teks}}</h1>")
+            nama_font[i] = font[i].slice(0, -4)
+            document.writeln("<h1 style='font-family: " + nama_font[i] + ";'>{{teks}}</h1>")
         }
         </script>
     </div>
